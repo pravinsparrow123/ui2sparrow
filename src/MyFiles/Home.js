@@ -15,7 +15,7 @@ const HomePage = () => {
     <ThemeProvider theme={theme}>
          <CssBaseline />
          <DefaultNavbar
-            brand="Sparrow"
+            brand="Sparrow Edutorii"
             routes={routes}
             action={{
             type: "external",
