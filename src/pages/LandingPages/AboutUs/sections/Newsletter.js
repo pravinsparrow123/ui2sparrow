@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-
+import React from "react";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -32,7 +32,7 @@ function Newsletter() {
     <MKBox component="section" pt={6} my={6}>
       <Container>
         <Grid container alignItems="center">
-          <Grid item sx={12} md={6} sx={{ ml: { xs: 0, lg: 3 }, mb: { xs: 12, md: 0 } }}>
+          <Grid item sx={12} md={6} >
             <MKTypography variant="h4">Be the first to see the news</MKTypography>
             <MKTypography variant="body2" color="text" mb={3}>
               Your company may not be in the software business, but eventually, a software company

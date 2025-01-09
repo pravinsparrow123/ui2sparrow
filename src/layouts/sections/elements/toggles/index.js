@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Toggles page components
 import Toggle from "layouts/sections/elements/toggles/components/Toggle";
 import ToggleContext from "layouts/sections/elements/toggles/components/ToggleContext";

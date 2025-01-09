@@ -15,7 +15,7 @@ Coded by www.creative-tim.com
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
+import React from "react";
 // react-flatpickr components
 import Flatpickr from "react-flatpickr";
 
@@ -40,7 +40,7 @@ function MKDatePicker({ input, ...rest }) {
 MKDatePicker.defaultProps = {
   input: {},
 };
-
+MKDatePicker.displayName = "MKDatePicker";
 // Typechecking props for the MKDatePicker
 MKDatePicker.propTypes = {
   input: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.any])),

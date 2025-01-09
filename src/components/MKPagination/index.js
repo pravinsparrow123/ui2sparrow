@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef, createContext, useContext, useMemo } from "react";
-
+import React from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -78,7 +78,7 @@ MKPagination.defaultProps = {
   active: false,
   placement: "right",
 };
-
+MKPagination.displayName = "MKPagination";
 // Typechecking props for the MKPagination
 MKPagination.propTypes = {
   item: PropTypes.bool,

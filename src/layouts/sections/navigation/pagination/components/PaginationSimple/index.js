@@ -18,7 +18,7 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
-
+import React from "react";
 // Material Kit 2 React components
 import MKPagination from "components/MKPagination";
 

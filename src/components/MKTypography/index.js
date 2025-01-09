@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef } from "react";
-
+import React from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -52,7 +52,7 @@ MKTypography.defaultProps = {
   textGradient: false,
   opacity: 1,
 };
-
+MKTypography.displayName = "MKTypography";
 // Typechecking props for the MKTypography
 MKTypography.propTypes = {
   color: PropTypes.oneOf([

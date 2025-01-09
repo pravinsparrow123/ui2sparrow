@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // ProgressBars page components
 import ProgressSimple from "layouts/sections/elements/progress-bars/components/ProgressSimple";
 

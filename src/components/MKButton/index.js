@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef } from "react";
-
+import React from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -44,7 +44,7 @@ MKButton.defaultProps = {
   circular: false,
   iconOnly: false,
 };
-
+MKButton.displayName = "MKButton";
 // Typechecking props for the MKButton
 MKButton.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),

@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Inputs page components
 import InputDynamic from "layouts/sections/input-areas/inputs/components/InputDynamic";
 import InputStatic from "layouts/sections/input-areas/inputs/components/InputStatic";

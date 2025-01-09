@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Buttons page components
 import ButtonsGradient from "layouts/sections/elements/buttons/components/ButtonsGradient";
 import ButtonsContained from "layouts/sections/elements/buttons/components/ButtonsContained";

@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Typography page components
 import TypographyRoboto from "layouts/sections/elements/typography/components/TypographyRoboto";
 

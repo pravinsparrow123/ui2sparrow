@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // @mui material components
 import Avatar from "@mui/material/Avatar";
 import { styled } from "@mui/material/styles";
-
+//import React from "react";
 export default styled(Avatar)(({ theme, ownerState }) => {
   const { palette, functions, typography, boxShadows } = theme;
   const { shadow, bgColor, size } = ownerState;

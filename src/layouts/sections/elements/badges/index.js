@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Badges page components
 import BadgesGradient from "layouts/sections/elements/badges/components/BadgesGradient";
 import BadgesSimple from "layouts/sections/elements/badges/components/BadgesSimple";

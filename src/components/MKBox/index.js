@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef } from "react";
-
+import React from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -41,7 +41,7 @@ MKBox.defaultProps = {
   shadow: "none",
   coloredShadow: "none",
 };
-
+MKBox.displayName = "MKBox";
 // Typechecking props for the MKBox
 MKBox.propTypes = {
   variant: PropTypes.oneOf(["contained", "gradient"]),

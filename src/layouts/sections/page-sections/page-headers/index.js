@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // PageHeaders page components
 import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
 

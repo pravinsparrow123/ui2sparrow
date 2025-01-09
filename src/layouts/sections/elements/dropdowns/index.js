@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import React from "react";
 // Dropdowns page components
 import DropdownAndDropup from "layouts/sections/elements/dropdowns/components/DropdownAndDropup";
 

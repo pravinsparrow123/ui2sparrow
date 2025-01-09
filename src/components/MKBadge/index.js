@@ -14,6 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef } from "react";
+import React from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -33,6 +34,7 @@ const MKBadge = forwardRef(
     </MKBadgeRoot>
   )
 );
+MKBadge.displayName = "MKBadge";
 
 // Setting default values for the props of MKBadge
 MKBadge.defaultProps = {

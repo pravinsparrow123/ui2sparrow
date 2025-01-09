@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 import { forwardRef } from "react";
-
+import React from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -48,7 +48,7 @@ MKProgress.defaultProps = {
   value: 0,
   label: false,
 };
-
+MKProgress.displayName = "MKProgress";
 // Typechecking props for the MKProgress
 MKProgress.propTypes = {
   variant: PropTypes.oneOf(["contained", "gradient"]),
