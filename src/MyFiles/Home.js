@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import theme from "assets/theme";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -9,8 +9,36 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import Grid from "@mui/material/Grid";
+import axios from "axios";
 
 const HomePage = () => {
+  const [status, setStatus] = useState("");
+  const [formData, setFormData] = useState({
+    to_name: "",
+    to_email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await axios.post("http://localhost:3001/send-email", formData);
+      if (response.status === 200) {
+        setStatus("Message sent successfully!");
+        setFormData({ to_name: "", to_email: "", message: "" });
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setStatus("Failed to send message. Please try again.");
+    }
+  };
+
   return (
     <ThemeProvider theme={theme}>
          <CssBaseline />
@@ -65,7 +93,7 @@ const HomePage = () => {
                 For further questions, including partnership opportunities, please email
                 hello@creative-tim.com or contact using our contact form.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
+              <MKBox width="100%" component="form" onSubmit={handleSubmit} method="post" autoComplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput
@@ -73,6 +101,9 @@ const HomePage = () => {
                       label="Full Name"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      name="to_name"
+                      value={formData.to_name}
+                      onChange={handleChange}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -82,6 +113,9 @@ const HomePage = () => {
                       label="Email"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                      name="to_email"
+                      value={formData.to_email}
+                      onChange={handleChange}
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -93,6 +127,9 @@ const HomePage = () => {
                       multiline
                       fullWidth
                       rows={6}
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </Grid>
                 </Grid>
@@ -106,7 +143,7 @@ const HomePage = () => {
           </MKBox>
         </Grid>
          </Grid>
-       
+         <p>{status}</p>
     </ThemeProvider>
     // <div>
     //   <header>
