@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/ui2sparrow1/static/js/main.8d98a5dd.js",
+    "main.js": "/ui2sparrow1/static/js/main.ef98ad30.js",
     "static/media/macbook.png": "/ui2sparrow1/static/media/macbook.e0a8c5d5cc02d71b6d86.png",
     "static/media/bg-coworking.jpeg": "/ui2sparrow1/static/media/bg-coworking.06bccc47fe6ae5366bf8.jpeg",
     "static/media/bg-sign-in-basic.jpeg": "/ui2sparrow1/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
@@ -19,16 +19,16 @@
     "static/media/ivana-square.jpg": "/ui2sparrow1/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
     "static/media/ivana-squares.jpg": "/ui2sparrow1/static/media/ivana-squares.3c555b856b04c2ab921b.jpg",
     "static/media/team-4.jpg": "/ui2sparrow1/static/media/team-4.85c82b6e60178804017f.jpg",
-    "static/media/logo-pinterest.svg": "/ui2sparrow1/static/media/logo-pinterest.844709031a3c1266979e933c371e043a.svg",
-    "static/media/logo-vodafone.svg": "/ui2sparrow1/static/media/logo-vodafone.b3e8486c0cac220bc3a31c9eab049b21.svg",
-    "static/media/logo-spotify.svg": "/ui2sparrow1/static/media/logo-spotify.7e255dc67938d13ff97cc8f16812d325.svg",
-    "static/media/logo-coinbase.svg": "/ui2sparrow1/static/media/logo-coinbase.87e91c7f318f2d82f46e78469976128b.svg",
-    "static/media/logo-nasa.svg": "/ui2sparrow1/static/media/logo-nasa.c5d11f8820bfde5fd64db0074156e06c.svg",
-    "static/media/logo-netflix.svg": "/ui2sparrow1/static/media/logo-netflix.432ed6b5c31b9bcab9a38e32bf46a1e9.svg",
+    "static/media/logo-pinterest.svg": "/ui2sparrow1/static/media/logo-pinterest.79835f813a45dcaf7b7f09c9e5d6f768.svg",
+    "static/media/logo-vodafone.svg": "/ui2sparrow1/static/media/logo-vodafone.64bd2eee2378660390ef68598cd9220c.svg",
+    "static/media/logo-spotify.svg": "/ui2sparrow1/static/media/logo-spotify.64b875da4a310812bc2a8793cbd5d334.svg",
+    "static/media/logo-coinbase.svg": "/ui2sparrow1/static/media/logo-coinbase.97dccf42a428602b2137b660528aa00f.svg",
+    "static/media/logo-nasa.svg": "/ui2sparrow1/static/media/logo-nasa.b4e79ad93e48f27643c48621609ba18b.svg",
+    "static/media/logo-netflix.svg": "/ui2sparrow1/static/media/logo-netflix.41468e1be7ec61f28c77c2d4da86083e.svg",
     "index.html": "/ui2sparrow1/index.html",
-    "main.8d98a5dd.js.map": "/ui2sparrow1/static/js/main.8d98a5dd.js.map"
+    "main.ef98ad30.js.map": "/ui2sparrow1/static/js/main.ef98ad30.js.map"
   },
   "entrypoints": [
-    "static/js/main.8d98a5dd.js"
+    "static/js/main.ef98ad30.js"
   ]
 }
