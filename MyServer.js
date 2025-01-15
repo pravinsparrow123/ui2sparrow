@@ -1,6 +1,7 @@
 const nodemailer =require('nodemailer');
 const express = require('express');
 const cors = require('cors');
+const axios =require("axios");
 
 const app = express();
 const PORT = 3001;
@@ -36,10 +37,31 @@ app.post("/send-email", (req, res) => {
       console.log(error);
       return res.status(500).json({ error: "Failed to send email", details: error });
     }
+    const newTransaction = {
+      TransactionName:"FName",
+      TransactionType:"Mail",
+      FromEmail: mailOptions.from,
+      ToEmail:to_email,
+      Message:message
+    };
+    submitTransaction(newTransaction);
     console.log('Email sent: ' + info.response);
     res.status(200).json({ message: "Email sent successfully", info: info });
   });
 });
+
+const submitTransaction = async (transaction) => {
+  try {
+    const response = await axios.post("http://localhost:7085/api/Transactions", transaction, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    console.log("Transaction created:", response.data);
+  } catch (error) {
+    console.error("Error creating transaction:", error);
+  }
+};
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
